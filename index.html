@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        palabra = 'Electroencefalograma'
+
+        for (let i = 0; i < palabra.length; i++) {
+            console.log(palabra[i])
+        }
+
+        let vocalesMayusculas = 0
+        let vocalesMinusculas = 0
+
+        for (let i = 0; i < palabra.length; i++) {
+            let letra = palabra[i]
+
+            if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+                vocalesMayusculas++
+            }
+
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+                vocalesMinusculas++
+            }
+        }
+
+        let vocalesTotales = vocalesMayusculas + vocalesMinusculas
+
+        console.log("Vocales mayúsculas:", vocalesMayusculas)
+        console.log("Vocales minúsculas:", vocalesMinusculas)
+        console.log("Vocales totales:", vocalesTotales)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
